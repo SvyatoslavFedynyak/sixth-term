@@ -9,6 +9,7 @@
             "name": "Debug (Launch)",
             "request": "launch",
             "mainClass": "main.Main",
+            "projectName": "task1proj",
             "console": "externalTerminal"
         }
     ]

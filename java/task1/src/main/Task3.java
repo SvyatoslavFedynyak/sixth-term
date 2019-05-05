@@ -10,21 +10,18 @@ public class Task3 {
             for (int j = 0; j < n-i-1; j++)
                 if (arr[j].yearOfFoundation > arr[j+1].yearOfFoundation)
                 {
-                    // swap arr[j+1] and arr[i]
                     EducationalInstitution temp = arr[j];
                     arr[j] = arr[j+1];
                     arr[j+1] = temp;
                 }
     }
     public static void doTask(EducationalInstitution[] arr){
-        //subtask1
         bubbleSort(arr);
         for (int i = 0; i < arr.length; i++){
             System.out.println(arr[i].name + " " + arr[i].yearOfFoundation);
         }
         
         
-        //subtask2
         School schoolWithMinCountOfStudents = new School();
         int countOfSchools = 0, j = 0;
         for (int i = 0; i < arr.length; i++){
@@ -48,7 +45,6 @@ public class Task3 {
         System.out.println(schoolWithMinCountOfStudents.countOfStudents);
         
         
-        //subtask3
         Scanner sc = new Scanner(System.in);
         System.out.println("enter accreditation level: ");
         int a = sc.nextInt();
